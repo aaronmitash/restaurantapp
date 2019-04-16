@@ -1,0 +1,198 @@
+@font-face{ 
+	font-family: 'playball-regular';
+	src: url('playball-regular.eot');
+	src: url('playball-regular.eot?#iefix') format('embedded-opentype'),
+	     url('playball-regular.woff') format('woff'),
+	     url('playball-regular.ttf') format('truetype'),
+	     url('playball-regular.svg#menu') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {margin:0; padding:0;}
+a * {border: 0;} 
+
+html {background-color:#000;}
+body {background-color:#000; display:none;}
+
+#iba_main {background-color:#eba85f !important; background:url(../images/main_bg.jpg) no-repeat; width:1080px; height:1920px; position:relative;}  
+#iba_cc {background-color:#eba85f !important; background:url(../images/cc_bg.jpg) no-repeat; width:1080px; height:1920px; position:relative;} 
+
+.top_small {background:url(../images/top_small.png) no-repeat; width:1080px; height:286px; position:relative;}
+.logo_small {width:600px; height:286px; position:absolute; top:0px; left:240px;}	
+
+.menu2_bg {width:128px; height:110px; position:absolute; top:50px; right:50px;}
+.menu_on {display:block; width:128px; height:110px; background:url(../images/menu_off.png) no-repeat;}
+.menu_off {display:block; width:128px; height:110px; background:url(../images/menu_on.png) no-repeat;}
+.back_small {display:block; width:125px; height:73px; background:url(../images/back_on.png) no-repeat; position:absolute; top:170px; left:50px;}
+.back_small:hover {background:url(../images/back_off.png) no-repeat;}
+
+.menu_top_margin {width:100%; height:32px;}
+.navigation-icon {
+	background-image:url(../images/menu_small_bg.png);
+	text-transform:uppercase;
+	font-family: playball-regular;
+	color:#e6af9d;
+	text-decoration:none;
+	font-size:35px;
+	text-align:center;
+	margin: 20px auto 0 auto;		
+	display:block;
+	height:100px;
+	width:952px;
+}
+.navigation-icon:hover {color:#fbf2e6;}
+
+.bottom {background:url(../images/bottom.png) no-repeat; width:1080px; height:130px; position:absolute; bottom:0px; left:0px;}
+
+.information_all {width:952px; margin:50px auto 50px auto;}
+.information_main {background:url(../images/information_main_bg.png) repeat-y; width:952px;}
+.information_bottom {background-image:url(../images/information_bottom.png); width:952px; height:123px; display:block;}
+.information_description {font-family:playball-regular; color:#261d1d; font-size:46px; padding:40px; text-align:justify;}
+.information_top {background-image:url(../images/information_top.png); width:952px; height:123px; position:relative;}
+.information_title {font-family:playball-regular; color:#711c02; font-size:46px; position:absolute; top:40px; left:37px; font-weight:bold;}
+.information_date {font-family:playball-regular; color:#985d4d; font-size:44px; position:absolute; top:42px; right:30px;}
+.information_top_2 {background-image:url(../images/information_top_2.png); width:952px; height:122px; position:relative;}
+
+.contact_phone {background-image:url(../images/contact_phone_bg.png); width:872px; height:137px; position:relative; display:block; margin:40px auto 40px auto; text-decoration:none;}
+.contact_phone_txt {color:#261d1d; font-size:50px; position:absolute; top:15px; left:27px; text-decoration:none}
+.contact_phone_txt2 {color:#261d1d; font-size:38px; position:absolute; top:70px; left:27px; text-decoration:none}
+
+.is_bg {background:url(../images/information_small_bg.png) no-repeat; width:952px; height:570px; position:relative; margin:50px auto 50px auto; display:block; text-decoration:none;}
+.is_title {font-family:playball-regular; color:#711c02; font-size:46px; position:absolute; top:40px; left:27px; text-decoration:none; font-weight:bold;}
+.is_date {font-family:playball-regular; color:#985d4d; font-size:44px; position:absolute; top:42px; right:20px; text-decoration:none;}
+.is_description {font-family:playball-regular; color:#261d1d; font-size:42px; position:absolute; top:150px; left:27px; width:906px; text-align:justify; text-decoration:none;}
+
+.login_bg {background:url(../images/login_bg.png) no-repeat; width:923px; height:638px; position:relative; margin:280px auto 0 auto; display:block;}
+.login_back {position:absolute; bottom:0px; left:0px; width:110px; height:110px; display:block;}
+.login {position:absolute; left:163px; width:660px; height:60px; background-color: transparent; border:none; text-align:center; font-family:playball-regular; font-size:50px;}
+#login {background: url(../images/login.jpg) no-repeat; border:none; width:192px; height:70px; cursor:pointer; position:absolute; top:395px; left:380px;}
+
+
+.loading_spinner {display:none; margin:0 auto 0 auto; width:128px;}
+.loading_spinner_all {display:none; margin:600px auto 0 auto; width:128px;}
+.loading_txt {font-family: playball-regular; font-size:48px; font-weight:bold; color:#261d1d; margin-top:20px; text-align:center;}
+
+.main_menu {width:947px; height:760px; position:absolute; top:1080px; left:65px;}
+
+#m1 {background:url(../images/reservation_ico.png) no-repeat;}
+#m2 {background:url(../images/btn_1.png) no-repeat;}
+#m3 {background:url(../images/btn_2.png) no-repeat;}
+#m4 {background:url(../images/btn_3.png) no-repeat;}
+#m5 {background:url(../images/btn_4.png) no-repeat;}
+#m6 {background:url(../images/btn_5.png) no-repeat;}
+#m7 {background:url(../images/message_big_ico.png) no-repeat;}
+
+
+.menu_ico {display:block; width:947px; height:132px; margin:20px 0 20px 0; 
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+			-webkit-transition: all 0.6s ease-out;
+			-moz-transition: all 0.6s ease-out;
+			-o-transition: all 0.6s ease-out;
+			 transition: all 0.6s ease-out;
+}
+.menu_rico {display:block; width:185px; height:158px; position:absolute; top:930px; right:60px;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+			-webkit-transition: all 0.6s ease-out;
+			-moz-transition: all 0.6s ease-out;
+			-o-transition: all 0.6s ease-out;
+			 transition: all 0.6s ease-out;
+}
+.menu_mico {display:block; width:161px; height:140px; position:absolute; top:935px; right:270px;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+			-webkit-transition: all 0.6s ease-out;
+			-moz-transition: all 0.6s ease-out;
+			-o-transition: all 0.6s ease-out;
+			 transition: all 0.6s ease-out;
+}
+
+.menu_ico:hover,
+.menu_rico:hover,
+.menu_mico:hover {
+			-webkit-transform:scale(1.1);
+			-moz-transform:scale(1.1);
+			-ms-transform:scale(1.1);
+			-o-transform:scale(1.1);
+			transform:scale(1.1);
+}
+
+
+.login_alert {font-family:playball-regular; font-size:36px; text-align:center; color:#261d1d; width:100%; position:absolute; top:-170px; left:0px;}
+.mail_alert {font-family:playball-regular; width:912px; font-size:58px; text-align:center; background-color:#FFF; padding:20px; text-align:center; color:#261d1d; position:absolute; bottom:300px; left:0px;}
+.ci_main {width:1080px; height:1504px; background-attachment:fixed; overflow-y:scroll; -webkit-overflow-scrolling: touch;}
+
+.tytul_b {font-family:playball-regular; font-size:38px; color:#fbf2e6; margin:30px 0 30px 0; text-align:center;}
+.back {background:url(../images/back.png) no-repeat; width:94px; height:94px; position:absolute; top:170px; right:50px;}
+
+.contact_bg {background: url(../images/contact_bg.png) no-repeat; width:952px; height:1481px; margin:80px auto 50px auto; position:relative;}
+
+.form_input {position:absolute; height:80px; background-color:transparent; border:none; text-align:center; font-family:playball-regular; font-size:52px; color:#711c02;}
+.form_textarea {position:absolute; top:720px; left:70px; width:810px; height:355px; background-color:transparent; border:none; font-family:playball-regular; font-size:52px; color:#711c02;}
+#contact_btn {background: url(../images/send_btn.png) no-repeat; border:none; width:472px; height:100px; cursor:pointer; position:absolute; top:1193px; left:245px;}
+.pm {margin-left:245px;}
+.contact_back {position:absolute; bottom:17px; left:17px; width:80px; height:80px; display:block;}
+
+.gallery_pt {background: url(../images/gallery_pt.png) no-repeat; width:378px; height:260px; position:absolute; top:13px; left:15px; z-index:10;}
+.gallery_catalog_bg {background: url(../images/gallery_catalog_bg.png) no-repeat; width:406px; height:403px; position:relative; margin:20px; display:inline-block;}
+.gallery_catalog_foto {position:absolute; top:13px; left:15px;}
+.gallery_name {position:absolute; top:287px; left:18px; font-family:playball-regular; font-size:40px; text-decoration:none; color:#fbf2e6;}
+.gallery_date {position:absolute; top:335px; left:18px; font-family:playball-regular; font-size:26px; text-decoration:none; color:#fbf2e6;}
+.gallery_quantity {position:absolute; top:320px; left:310px; font-family:playball-regular; font-size:52px; text-align:center; text-decoration:none; color:#955d4b; width:75px;}
+.gallery_foto {border:5px solid #e3e4e3; display:inline-block; margin:30px;}
+
+.work_bg_left {background: url(../images/menu_fc_left.png) no-repeat; width:988px; height:331px; position:relative; display:block; margin:0 auto 0 auto; text-decoration:none;}
+.work_bg_right {background: url(../images/menu_fc_right.png) no-repeat; width:988px; height:331px; position:relative; display:block; margin:0 auto 0 auto; text-decoration:none;}
+.work_title_left {font-family:playball-regular; color:#f5ede2; font-size:48px; position:absolute; top:110px; left:230px; text-align:center; width:350px;}
+.work_title_right {font-family:playball-regular; color:#f5ede2; font-size:48px; position:absolute; top:110px; right:230px; text-align:center; width:350px;}
+.work_img_left {position:absolute; top:69px; right:108px;}
+.work_img_right {position:absolute; top:69px; left:108px;}
+.np_left {font-family:playball-regular; color:#261d1d; font-size:66px; position:absolute; top:40px; left:28px; width:174px; text-align:center;}
+.np_right {font-family:playball-regular; color:#261d1d; font-size:66px; position:absolute; top:40px; right:28px; width:174px; text-align:center;}
+
+.food_bg {background: url(../images/food_bg.png) no-repeat; width:952px; height:410px; margin:50px auto 50px auto; position:relative;}
+
+.pagination_bg {width:952px; text-align:center; font-family:playball-regular; font-size:62px; color:#b0732a; margin:0 auto 60px auto; background: url(../images/pagination_bg.png) repeat-x;}
+.pages_bg {padding:0 30px 0 30px;}
+a.active_pg {font-family:playball-regular; font-size:62px; text-decoration:none; color:#271d1e;}
+a.pages_ci:link, a.pages_ci:visited, a.pages_ci:active {font-family:playball-regular; font-size:62px; text-decoration:none; color:#b0732a; padding:0 30px 0 30px;}
+a.pages_ci:hover {text-decoration:none; color:#b0732a;}
+
+.fimg {position:absolute; top:25px; left:25px;}
+.fprice {font-family:playball-regular; font-size:40px; text-align:center; color:#f5ede2; width:100px; position:absolute; top:23px; right:0px;}
+.fname {font-family:playball-regular; font-size:46px; text-align:left; color:#271d1e; width:460px; position:absolute; top:110px; left:465px;}
+.fdesc {font-family:playball-regular; font-size:38px; text-align:left; color:#985d4d; width:460px; position:absolute; top:162px; left:465px;} 
+
+.reservation_bg {background: url(../images/reservation_bg.png) no-repeat; width:952px; height:1995px; margin:50px auto 50px auto; position:relative;}
+.reservation_ok {background: url(../images/ri_info_bg.png) no-repeat; width:856px; height:240px; margin:0 auto 0 auto; position:relative;}
+.reservation_more_ok {background: url(../images/ri2_info_bg.png) no-repeat; width:856px; height:280px; margin:0 auto 0 auto; position:relative;}
+.reservation_atxt {font-family:playball-regular; font-size:54px; color:#f5dfc1; position:absolute; bottom:12px; left:128px; text-align:center; width:600px;}
+.reservation_atxt_ok {font-family:playball-regular; font-size:54px; color:#50cc56; position:absolute; bottom:12px; left:128px; text-align:center; width:600px;}
+.reservation_ok_date {font-family:playball-regular; font-size:58px; color:#e79074; position:absolute; top:56px; left:60px;}
+.reservation_ok_time {font-family:playball-regular; font-size:74px; color:#f5ede2; position:absolute; top:44px; right:60px;}
+.reservation_ok_ti {position:absolute; top:60px; left:385px;}
+.reservation_ok_date_more {font-family:playball-regular; font-size:58px; color:#e79074; position:absolute; top:96px; left:60px;}
+.reservation_ok_time_more {font-family:playball-regular; font-size:74px; color:#f5ede2; position:absolute; top:84px; right:60px;}
+.reservation_ok_ti_more {position:absolute; top:100px; left:385px;}
+.mar_btn {margin:20px auto 0 auto; width:472px; height:100px; display:block;}
+.reservation_ok_txt {font-family:playball-regular; font-size:56px; color:#261d1d; padding:45px 0 0 40px;}
+.del_btn {position:absolute; top:0px; right:0px;}
+.del_more_btn {position:absolute; top:40px; right:0px;}
+#reservation_btn {background: url(../images/send_btn.png) no-repeat; border:none; width:472px; height:100px; cursor:pointer; position:absolute; top:1708px; left:245px;}
+.reservation_back {position:absolute; bottom:17px; left:17px; width:80px; height:80px; display:block;}
+.reservation_alert {position:absolute; bottom:300px; left:0px; width:912px; font-family:playball-regular; font-size:58px; text-align:center; background-color:#FFF; padding:20px;}
+.reservation_message_ico {position:absolute; top:-43px; left:60px; z-index:2;}
+
+.rfi {background-color:transparent; border:none; text-align:center; font-family:playball-regular; font-size:52px; color:#711c02;}
+.rf_input_1 {position:absolute; top:175px; left:245px; width:630px; height:80px;}
+.rf_input_2 {position:absolute; top:336px; left:320px; width:555px; height:80px;}
+.rf_input_3 {position:absolute; top:498px; left:245px; width:630px; height:80px;}
+.rf_input_4 {position:absolute; top:677px; left:555px; width:90px; height:60px;}
+.rf_input_5a {position:absolute; top:840px; left:255px; width:100px; height:60px;}
+.rf_input_5b {position:absolute; top:840px; left:360px; width:220px; height:60px;}
+.rf_input_5c {position:absolute; top:840px; left:590px; width:160px; height:60px;}
+.rf_input_6 {position:absolute; top:1000px; left:525px; width:90px; height:60px;}
+.rf_input_7 {position:absolute; top:1000px; left:625px; width:90px; height:60px;}
+.rf_input_8 {position:absolute; top:1000px; left:725px; width:120px; height:60px;}
+.rf_input_9 {position:absolute; top:1210px; left:85px; width:785px; height:380px;}
+
+.ce {font-family:playball-regular; width:912px; font-size:58px; text-align:center; color:#b20701; background-color:#FFF; padding:20px; text-align:center; margin:460px 0 0 60px;}
