@@ -1,0 +1,97 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+	<meta charset="utf-8"> 
+	<title>Company Name</title> 
+	<meta id="Viewport" name="viewport">     
+	<script src="plugins/jquery-1.10.2.min.js"></script>  
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="plugins/main.js"></script>
+    <script src="cordova.js"></script>
+    <script type="text/javascript">						
+		document.addEventListener('deviceready', function() {
+ 		 	setTimeout(function() { navigator.splashscreen.hide(); }, 3000);
+		});    
+    $(function(){
+		if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
+		  var ww = ( $(window).width() < window.screen.width ) ? $(window).width() : window.screen.width; 
+		  var mw = 1080;
+		  var ratio =  ww / mw;
+		  $('#Viewport').attr('content', 'initial-scale=' + ratio + ', maximum-scale=' + ratio + ', minimum-scale=' + ratio + ', user-scalable=yes, width=' + ww);
+		}
+		});
+		var currentPage = window.location.href;
+		window.sessionStorage.setItem("page",currentPage);
+		
+		var ukey = window.localStorage.getItem("reservation_sid");
+		if(ukey && ukey!='null' && ukey!='false' && typeof(ukey) != 'undefined'){
+		
+			$.ajax({
+				type: "GET",
+				url: "http://user3.itsindev.com/restaurantapp/ira_server/message.php?ukey="+ ukey +"",
+				jsonp: "callback",
+				dataType: "jsonp",
+				crossDomain: true,
+				success: function(data) {
+						
+				if(data.mr.status=='yes'){ $('#iba_main').append('<a href="message.html?msg='+ data.mr.id +'" id="m7" class="menu_mico" data-transition="fade"></a>'); }																														
+				},
+				error: function(){
+					$(this).ajax;
+				}				
+			});	
+		}														
+	</script>
+    <script src="http://code.createjs.com/easeljs-0.7.0.min.js"></script>
+	<script src="http://code.createjs.com/tweenjs-0.5.0.min.js"></script>
+    <script src="http://code.createjs.com/movieclip-0.7.0.min.js"></script>
+    <script src="http://code.createjs.com/preloadjs-0.4.0.min.js"></script>
+    <script src="plugins/animation.js"></script>
+    <script>
+	var canvas, stage, exportRoot;
+	
+	function init() {
+		canvas = document.getElementById("canvas");
+		images = images||{};
+	
+		var loader = new createjs.LoadQueue(false);
+		loader.addEventListener("fileload", handleFileLoad);
+		loader.addEventListener("complete", handleComplete);
+		loader.loadManifest(lib.properties.manifest);
+	}
+	
+	function handleFileLoad(evt) {
+		if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+	}
+	
+	function handleComplete() {
+		exportRoot = new lib.animationJS();
+	
+		stage = new createjs.Stage(canvas);
+		stage.addChild(exportRoot);
+		stage.update();
+	
+		createjs.Ticker.setFPS(lib.properties.fps);
+		createjs.Ticker.addEventListener("tick", stage);
+	}
+	</script>
+</head> 
+<body onload="init();"> 
+<div id="iba_main">
+
+	<div data-role="content" data-enhance="false">
+    <img src="images/top_big.png" width="1080" height="533">
+    <canvas id="canvas" width="601" height="355" style="position:absolute; top:650px; left:0px;"></canvas>	
+    <a href="reservation.html" id="m1" class="menu_rico"></a>
+    <div class="main_menu">    	
+        <a href="about_us.html" id="m2" class="menu_ico"></a>
+        <a href="news.html" id="m3" class="menu_ico"></a>
+        <a href="menu.html" id="m4" class="menu_ico"></a>
+        <a href="gallery.html" id="m5" class="menu_ico"></a>
+        <a href="contact.html" id="m6" class="menu_ico"></a>
+    </div>     
+    </div>
+
+</div>
+</body>
+</html>
